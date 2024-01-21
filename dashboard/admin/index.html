@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="../assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="../assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="companys.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-group-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Companys</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="users.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-admin-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Users</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="products.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-shopping-bag-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item has-sub"><a href="#" class="nk-menu-link nk-menu-toggle"><span
+                                            class="nk-menu-icon"><em class="icon ri-login-box-line"></em></span><span
+                                            class="nk-menu-text">Auth Pages</span></a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item"><a href="login.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Login</span></a></li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="../assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="#">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome Super Admin (CardGit Admin) !</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+
+                                    <div class="row row-sm">
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-primary-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TODAY STAFFS</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">500</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div> </span>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-danger-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TODAY EARNINGS</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">$1,230.17</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline2" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-success-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TOTAL PRODUCTS</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">7,000</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline3" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-warning-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TOTAL SUBSCRIPTIONS</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">500</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline4" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-warning-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">PRODUCT SOLD</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">500</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline4" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-danger-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TOTAL USERS</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">30,000</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline2" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-primary-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TODAY COMPANY'S</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">3,000</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div> </span>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-3 col-lg-6 col-md-6 col-xm-12 mb-4">
+                                            <div class="card overflow-hidden sales-card bg-success-gradient">
+                                                <div class="px-3 pt-3  pb-2 pt-0">
+                                                    <div class="">
+                                                        <h6 class="mb-3 tx-12 text-white">TOTAL PROFILE CARD</h6>
+                                                    </div>
+                                                    <div class="pb-0 mt-0">
+                                                        <div class="d-flex">
+                                                            <div class="">
+                                                                <h4 class="tx-20 fw-bold mb-1 text-white">1,000</h4>
+                                                                <p class="mb-0 tx-12 text-white op-7">Compared to last
+                                                                    week</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div> <span id="compositeline3" class="pt-1"><canvas width="254"
+                                                        height="30"
+                                                        style="display: inline-block; width: 254px; height: 30px; vertical-align: top;"></canvas></span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../assets/js/bundle2888.js"></script>
+    <script src="../assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="../assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="../assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="staff.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-group-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Staffs</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="admin.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-admin-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Administer</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="products.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-shopping-bag-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="settings.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-settings-2-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item has-sub"><a href="#" class="nk-menu-link nk-menu-toggle"><span
+                                            class="nk-menu-icon"><em class="icon ri-login-box-line"></em></span><span
+                                            class="nk-menu-text">Auth Pages</span></a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item"><a href="login.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Login</span></a></li>
+                                        <li class="nk-menu-item"><a href="register.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Register</span></a></li>
+                                        <li class="nk-menu-item"><a href="forgot-password.html"
+                                                class="nk-menu-link"><span class="nk-menu-text">Forgot
+                                                    Password</span></a></li>
+
+                                        <li class="nk-menu-item"><a href="verify.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Verify Email</span></a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="../assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="profile.html">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome CharlesTech!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-content py-3">
+                                    <div class="form-control-wrap">
+                                        <div class="form-control-icon start md text-light"><em
+                                                class="icon ri-search-line pt-3"></em></div><input type="text"
+                                            class="form-control py-3 form-control-md" placeholder="Search Products">
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+
+                                    <div class="nk-block-head mt-5 pt-3">
+                                        <div class="nk-block-head-between">
+                                            <div class="nk-block-head-content">
+                                                <h1 class="">Company Products</h1>
+                                            </div>
+                                            <a class="btn btn-primary btn-sm" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModalTop">+ Add
+                                                Products</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <table class="table table-middle mb-0">
+
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th class="tb-col tb-col-check">
+                                                        <div class="form-check"><input class="form-check-input"
+                                                                type="checkbox" value=""></div>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">Product Name</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">Product Category</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">Product Description</h6>
+                                                    </th>
+
+                                                    <th class="tb-col"></th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td class="tb-col tb-col-check">
+                                                        <div class="form-check"><input class="form-check-input"
+                                                                type="checkbox" value=""></div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Modern Bag Design</div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Travel Landing , UX/UI</div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, atque delectus nemo perspiciatis temporibus numquam voluptates sequi corporis eaque ipsa facere, earum debitis unde ut consequatur. Voluptatum alias quos ipsam?</div>
+                                                    </td>
+
+
+                                                    <td class="tb-col tb-col-end">
+                                                        <div class="dropdown"><button
+                                                                class="btn btn-sm btn-icon btn-zoom me-n1" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"><em
+                                                                    class="icon ri-settings-2-line"></em></button>
+                                                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                                                <div class="dropdown-content">
+                                                                    <ul
+                                                                        class="link-list link-list-hover-bg-primary link-list-md">
+
+                                                                        <li><a href="#"><em
+                                                                                    class="icon ri-delete-bin-2-fill"></em><span>Delete</span></a></li>
+
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ADD NEW PRODUCTS -->
+    <div class="modal fade" id="exampleModalTop" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="scrollableLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-top">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="scrollableLabel">Modal title</h5><button type="button" class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Product Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Product Category</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected> -- Select Product Category -- </option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="Description" class="form-label">Product Description</label>
+                            <textarea class="form-control" id="Description" rows="3"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary w-100">Submit</button>
+                    </form>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-sm btn-secondary"
+                        data-bs-dismiss="modal">Close</button><button type="button" class="btn btn-sm btn-primary">Save
+                        changes</button></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bundle2888.js"></script>
+    <script src="../assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>

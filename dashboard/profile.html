@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="favourites.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-star-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Favourites </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="connection.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-link"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Connections </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="cards.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-profile-line""></em>
+                                        </span>
+                                        <span class=" nk-menu-text">View Cards </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="profile.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-user-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-footer">
+                    <div class="nk-sidebar-footer-extended pt-3">
+                        <div class="border border-light rounded-3">
+
+                            <div class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                    <h6 class="lead-text">Free Plan</h6>
+
+                                    <a class="link link-primary" target="_blank" href="/index.html#pricing">
+                                        <em class="ri-flashlight-fill icon text-warning"></em>
+                                        <span>Upgrade</span>
+                                    </a>
+
+                                </div>
+
+                                <div class="progress progress-md">
+                                    <div class="progress-bar" data-progress="25%"></div>
+                                </div>
+
+                            </div>
+
+                            <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3" href="profile.html">
+
+                                <div class="media-group">
+
+                                    <div class="media media-sm media-middle media-circle text-bg-primary">
+                                        <img src="assets/img/avatar.png" />
+                                    </div>
+
+                                    <div class="media-text">
+                                        <h6 class="fs-6 mb-0">Charle Johnson</h6>
+                                        <span class="text-light fs-7">charle@gmail.com</span>
+                                    </div>
+
+                                    <em class="icon ri-arrow-right-s-line ms-auto ps-1"></em>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                                <a href="index.html" class="logo-link">
+                                    <div class="logo-wrap">
+                                        <img class="logo-icon" src="assets/img/logo.png" alt="">
+                                        <img class="logo-icon" src="assets/img/logo.png" alt="">
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="profile.html">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome Charle!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+
+                                    <div class="row">
+
+                                        <div class="col-md-4 mb-3">
+                                            <div class="card card-profile"><img src="assets/img/bg-profile.jpg"
+                                                    alt="placeholder" class="card-img-top">
+                                                <div class="row justify-content-center">
+                                                    <div class="mt-n4 mt-lg-n6 mb-4 mb-lg-0">
+                                                        <section class="container text-center m-auto position-relative">
+                                                            <form>
+                                                                <div role="presentation" tabindex="0" class="dropzone"
+                                                                    style="cursor: pointer;"><input class="b-none"
+                                                                        accept="image/*" multiple="" type="file"
+                                                                        tabindex="-1" style="display: none;">
+                                                                    <div class="upload"> <svg stroke="currentColor"
+                                                                            fill="currentColor" stroke-width="0"
+                                                                            viewBox="0 0 24 24" height="1em" width="1em"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M13 19v-4h3l-4-5-4 5h3v4z"></path>
+                                                                            <path
+                                                                                d="M7 19h2v-2H7c-1.654 0-3-1.346-3-3 0-1.404 1.199-2.756 2.673-3.015l.581-.102.192-.558C8.149 8.274 9.895 7 12 7c2.757 0 5 2.243 5 5v1h1c1.103 0 2 .897 2 2s-.897 2-2 2h-3v2h3c2.206 0 4-1.794 4-4a4.01 4.01 0 0 0-3.056-3.888C18.507 7.67 15.56 5 12 5 9.244 5 6.85 6.611 5.757 9.15 3.609 9.792 2 11.82 2 14c0 2.757 2.243 5 5 5z">
+                                                                            </path>
+                                                                        </svg> </div>
+                                                                </div>
+                                                                <div class="mt-n4 mt-lg-n6 mb-lg-0 text-center m-auto">
+                                                                    <img class="upload_image img-fluid border border-2 border-white"
+                                                                        src="assets/img/avatar.png" alt="profile">
+                                                                </div>
+                                                                <div class="text-center m-auto mt-4"><button
+                                                                        type="submit"
+                                                                        class="btn btn-sm btn-dark float-right">Update
+                                                                        Image</button></div>
+                                                            </form>
+                                                        </section>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body pt-0">
+                                                    <div class="text-center mt-3">
+                                                        <h5 class="fw-bold"> John Doe </h5>
+                                                        <p class="tex-sm"> johndoe@gmail.com </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-8">
+
+                                            <div class="card px-2 px-lg-4 py-3 py-lg-0">
+
+                                                <div class="card-header bg-transparent pb-3 mb-3">
+                                                    <div class="d-flex align-items-center">
+                                                        <p class="mb-0 fw-bold">Edit Profile</p>
+                                                        <button data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                            class="btn btn-dark btn-sm ms-auto">Share</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card-body">
+
+                                                    <p class="text-uppercase text-sm">User Information</p>
+
+                                                    <form action="">
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">Username</label><input
+                                                                        class="form-control" type="text"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">Email
+                                                                        address</label><input class="form-control"
+                                                                        type="email"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">First
+                                                                        name</label><input class="form-control"
+                                                                        type="text"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">Last
+                                                                        name</label><input class="form-control"
+                                                                        type="text"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">Phone</label><input
+                                                                        class="form-control" type="tel"></div>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <div class="form-group"><label for="example-text-input"
+                                                                        class="form-control-label">Gender</label><select
+                                                                        class="form-control">
+                                                                        <option value=""> -- Select Gender -- </option>
+                                                                        <option value=""> Male </option>
+                                                                        <option value=""> Female </option>
+                                                                    </select></div>
+                                                            </div>
+                                                        </div><button class="btn btn-dark mt-3 w-100"
+                                                            style="font-size: 14px;">
+                                                            Update Profile </button>
+                                                    </form>
+
+                                                    <hr class="horizontal dark">
+
+                                                    <p class="text-uppercase text-sm">Password</p>
+
+                                                    <div class="password">
+                                                        <form action="#" autocomplete="off">
+                                                            <div class="row">
+                                                                <div class="col-md-12 mb-4">
+                                                                    <div class="form-group"><label
+                                                                            for="example-text-input"
+                                                                            class="form-control-label">Current
+                                                                            Password</label>
+                                                                        <div class=""><input name="currentPassword"
+                                                                                type="text" placeholder=""
+                                                                                class="form-control" value=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-group"><label
+                                                                            for="example-text-input"
+                                                                            class="form-control-label">New
+                                                                            Password</label>
+                                                                        <div class=""><input name="password" type="text"
+                                                                                placeholder="" class="form-control"
+                                                                                value=""></div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 mb-4">
+                                                                    <div class="form-group"><label
+                                                                            for="example-text-input"
+                                                                            class="form-control-label">Confirm
+                                                                            Password</label>
+                                                                        <div class=""><input name="confirmPassword"
+                                                                                type="text" placeholder=""
+                                                                                class="form-control " value=""></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div><button type="submit" class="btn btn-dark w-100"
+                                                                style="font-size: 14px;"> Update Password </button>
+                                                        </form>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Share Profile</h5><button type="button"
+                        class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center m-auto">
+                    <img src="assets/img/barcode.png" alt="">
+                    <p>Share your profile with others</p>
+                </div>
+                <div class="modal-footer"><button type="button" class="btn btn-sm btn-secondary"
+                        data-bs-dismiss="modal">Close</button><button data-bs-toggle="modal"
+                        data-bs-target="#successModal" type="button" class="btn btn-sm btn-primary">Share
+                        Profile</button></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-5 text-center">
+                    <div class="media media-huge media-middle media-circle text-primary bg-primary bg-opacity-20 mb-3">
+                        <em class="icon ni ni-check"></em>
+                    </div>
+                    <h2 class="h1">You Successfully Shared your profile</h2>
+                    <p>We truly appreciate your input, as it will help us improve our products and services for our
+                        customers.</p>
+                    <div class="mt-4"><button type="button" data-bs-dismiss="modal"
+                            class="btn btn-primary w-100">Close</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bundle2888.js"></script>
+    <script src="assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>

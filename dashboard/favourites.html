@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="favourites.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-star-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Favourites </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="connection.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-link"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Connections </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="cards.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-profile-line""></em>
+                                        </span>
+                                        <span class=" nk-menu-text">View Cards </span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-4">
+                                    <a href="profile.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-user-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-footer">
+                    <div class="nk-sidebar-footer-extended pt-3">
+                        <div class="border border-light rounded-3">
+
+                            <div class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                    <h6 class="lead-text">Free Plan</h6>
+
+                                    <a class="link link-primary" target="_blank" href="/index.html#pricing">
+                                        <em class="ri-flashlight-fill icon text-warning"></em>
+                                        <span>Upgrade</span>
+                                    </a>
+
+                                </div>
+
+                                <div class="progress progress-md">
+                                    <div class="progress-bar" data-progress="25%"></div>
+                                </div>
+
+                            </div>
+
+                            <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3" href="profile.html">
+
+                                <div class="media-group">
+
+                                    <div class="media media-sm media-middle media-circle text-bg-primary">
+                                        <img src="assets/img/avatar.png" />
+                                    </div>
+
+                                    <div class="media-text">
+                                        <h6 class="fs-6 mb-0">Charle Johnson</h6>
+                                        <span class="text-light fs-7">charle@gmail.com</span>
+                                    </div>
+
+                                    <em class="icon ri-arrow-right-s-line ms-auto ps-1"></em>
+
+                                </div>
+
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                                <a href="index.html" class="logo-link">
+                                    <div class="logo-wrap">
+                                        <img class="logo-icon" src="assets/img/logo.png" alt="">
+                                        <img class="logo-icon" src="assets/img/logo.png" alt="">
+                                    </div>
+                                </a>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="profile.html">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome Charle!</h2>
+                                            <p>View your Favourites card</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row nk-block">
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="card connection_card p-4"
+                                            style="background: url(assets/img/page_bg_3.jpeg);">
+
+                                            <div class="container position-relative text-center m-auto">
+
+                                                <div class="position-absolute">
+                                                    <button data-bs-toggle="modal" href="#cancelSubscriptionModal"
+                                                        class="btn btn-white btn-sm fs-15px"><i
+                                                            class="ri-eye-fill"></i></button>
+                                                </div>
+
+                                                <img src="assets/img/avatar.png" class="rounded-circle" alt="">
+
+
+                                                <h3 class="text-white pt-3">Charle Johnson   <span style="color: #1773EA;"><i class="ri-verified-badge-fill"></i></span> </h3>
+
+                                                <h6 class="mt-0 pt-0 text-white"> <i>Charle Tech LTD</i> </h6>
+
+                                                <p class="text-white">Web Developer, Software Enginner, Pianist.</p>
+
+                                                <ul class="m-auto text-center justify-content-center">
+                                                    <li> <i class="ri-facebook-fill"></i> </li>
+                                                    <li> <i class="ri-instagram-fill"></i> </li>
+                                                    <li> <i class="ri-twitter-fill"></i> </li>
+                                                    <li> <i class="ri-whatsapp-fill"></i> </li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 mb-4">
+                                        <div class="card connection_card p-4"
+                                            style="background: url(assets/img/page_bg_4.jpeg);">
+
+                                            <div class="container position-relative text-center m-auto">
+
+                                                <div class="position-absolute">
+                                                    <button data-bs-toggle="modal" href="#cancelSubscriptionModal"
+                                                        class="btn btn-white btn-sm fs-15px"><i
+                                                            class="ri-eye-fill"></i></button>
+                                                </div>
+
+                                                <img src="assets/img/avatar.png" class="rounded-circle" alt="">
+
+                                                <h2 class="text-dark pt-3">Charle Johnson</h2>
+
+                                                <h6 class="mt-0 pt-0 text-dark"> <i>Charle Tech LTD</i> </h6>
+
+                                                <p class="text-dark">Web Developer, Software Enginner, Pianist.</p>
+
+                                                <ul class="m-auto text-center justify-content-center">
+                                                    <li> <i class="ri-facebook-fill"></i> </li>
+                                                    <li> <i class="ri-instagram-fill"></i> </li>
+                                                    <li> <i class="ri-twitter-fill"></i> </li>
+                                                    <li> <i class="ri-whatsapp-fill"></i> </li>
+                                                </ul>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal fade" id="cancelSubscriptionModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body p-4">
+                    <div class="media media-rg media-middle media-circle text-danger bg-danger bg-opacity-20 mb-3"><em
+                            class="icon ni ni-spark-fill"></em></div>
+                    <h2 class="h1">Remove Favourites</h2>
+                    <p>Are you sure you want to remove card as favourite?</p>
+
+                    <ul class="row gx-4 mt-4">
+                        <li class="col-6"><button class="btn btn-outline-light w-100" data-bs-dismiss="modal">Keep
+                            </button></li>
+                        <li class="col-6"><a href="#" data-bs-dismiss="modal" class="btn btn-danger w-100">Yes,
+                                Remove</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bundle2888.js"></script>
+    <script src="assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>

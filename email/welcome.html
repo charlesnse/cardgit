@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>New User Account</title>
+</head>
+<body style='background-color: #222533; padding: 20px; font-size: 14px; line-height: 1.43; font-family: "Helvetica Neue", "Segoe UI", Helvetica, Arial, sans-serif;'>
+    <div style='max-width: 600px; margin: 0px auto; background-color: #fff; box-shadow: 0px 20px 50px rgba(0,0,0,0.05);'>
+        <div style='padding: 60px 70px;'>
+
+            <div style="text-align: left;">
+                <div style="padding-bottom: 20px;"><img src="../assets/img/logo.png" alt="Company" style="width: 56px;"></div>
+              </div>
+
+            <h2 style='margin-top: 0px;'>CardGit New User Account</h2>
+            <div style='color: #636363; font-size: 14px;'>
+                Hi {{$data['name'] ?? "User"}}, 
+                <br><br> Welcome Onboard,
+                <br><br> Please see your login details below:
+                <br><br> Email: {{$data['email'] }}
+                <br> Password: {{$data['password'] ?? "password"}}  
+                <br><br> Click the button below to verify your account.
+            </div>
+
+            <a rel="noopener" target="_blank" href='{{$data['link']}}' style='padding: 5px 15px; background-color: #4057F1; color: #fff; font-weight: bolder; font-size: 14px; display: inline-block; margin: 20px 0px; margin-right: 20px; text-decoration: none;'>
+                Login
+            </a>
+            
+            <h4 style='margin-bottom: 10px;'>Need Help?</h4>
+            <div style='color: #A5A5A5; font-size: 12px;'>
+                <p>If you have any questions you can simply reply to this email or find our contact information below. Also, contact us at 
+                    <a href='mailto:admin@CardGit.com' style='text-decoration: underline; color: #4B72FA;'>admin@CardGit.com</a>
+                </p>
+            </div>
+        </div>
+            
+    </div>
+</body>
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="../assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="../assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="staff.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-group-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Staffs</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="admin.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-admin-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Administer</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="products.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-shopping-bag-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="settings.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-settings-2-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item has-sub"><a href="#" class="nk-menu-link nk-menu-toggle"><span
+                                            class="nk-menu-icon"><em class="icon ri-login-box-line"></em></span><span
+                                            class="nk-menu-text">Auth Pages</span></a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item"><a href="login.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Login</span></a></li>
+                                        <li class="nk-menu-item"><a href="register.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Register</span></a></li>
+                                        <li class="nk-menu-item"><a href="forgot-password.html"
+                                                class="nk-menu-link"><span class="nk-menu-text">Forgot
+                                                    Password</span></a></li>
+
+                                        <li class="nk-menu-item"><a href="verify.html" class="nk-menu-link"><span
+                                                    class="nk-menu-text">Verify Email</span></a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="../assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="profile.html">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome CharlesTech!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+
+                                    <div class="container-fluid mt--6" style="">
+                                        <div class="card mb-5">
+                                            <div class="card-header">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        Personal Information
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>First Name</h6>
+                                                        <p class="text-dark mb-5">sert</p>
+                                                        <h6>Phone Number</h6>
+                                                        <p class="text-dark mb-5">+2347306793</p>
+                                                        <h6> Company's ID </h6>
+                                                        <!---->
+                                                        <p class="text-dark mb-5"> ST8HVL </p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Last Name</h6>
+                                                        <p class="text-dark mb-5">ters</p>
+                                                        <h6>Company Name</h6>
+                                                        <p class="text-dark mb-5">Inertia Logistics</p>
+                                                        <h6>Cash Made From Completed Trips</h6>
+                                                        <p class="text-dark mb-5"> ₦ 8398</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Email</h6>
+                                                        <p class="text-dark mb-5">wert@gmail.com</p>
+                                                        <h6>Registered On</h6>
+                                                        <p class="text-dark mb-5">Wed, Jul 26, 2023 9:16 AM</p>
+                                                        <h6> Total Debts </h6>
+                                                        <p class="text-dark mb-5"> ₦ 644 </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-5">
+                                            <div class="card-header">Other Details</div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Bank Details</h6>
+                                                        <p class="text-dark mb-5">gfdhsjaskl</p>
+                                                        <h6>Company Registration Number</h6>
+                                                        <p class="text-dark mb-5">ak1504</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Bank BvN</h6>
+                                                        <p class="text-dark mb-5">sgshdkdk</p>
+                                                        <h6>Company Registration File</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-2-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Valid ID Card Type</h6>
+                                                        <p class="text-dark mb-5">FYUIOOPOH</p>
+                                                        <h6>Valid ID Card</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-3-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-5">
+                                            <div class="card-header">Other Details</div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Passport</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-1-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                        <h6>Courier Permit</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-4-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                        <h6>Proof Of Address Type</h6>
+                                                        <p class="text-dark mb-5">ahshdjdik</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Guarantor</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/null"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                        <h6>Company/Personal Insurance Papers</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-5-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Proof Of Address</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-9-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                        <h6>Bike Plate Number</h6>
+                                                        <p class="text-dark mb-5">frtyuioop
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card mb-5">
+                                            <div class="card-header">Other Details</div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h6>Vehicle Licence</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-17-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <h6>Rider Driver Licence</h6> <a
+                                                            href="https://dashboard.rundeliverys.com/uploads/1020-18-1690359416.jpg"
+                                                            download="" class="btn btn-sm btn-dark mb-5">Download</a>
+                                                    </div>
+                                                    <div class="col-md-4"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="../assets/js/bundle2888.js"></script>
+    <script src="../assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>

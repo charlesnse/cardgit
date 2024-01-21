@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon">
+    <title>CardGit | Dashboard </title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/global.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body class="nk-body ">
+
+    <div class="nk-app-root " data-sidebar-collapse="lg">
+
+        <div class="nk-main">
+
+            <div class="nk-sidebar nk-sidebar-fixed" id="sidebar">
+
+                <!-- <div class="nk-compact-toggle">
+                    <button class="btn btn-xs btn-outline-light btn-icon compact-toggle
+                        text-light bg-white rounded-3">
+                        <em class="icon off ri-arrow-left-s-line"></em>
+                        <em class="icon on ri-arrow-right-s-line"></em>
+                    </button>
+                </div> -->
+
+                <div class="nk-sidebar-element nk-sidebar-head">
+
+                    <div class="nk-sidebar-brand">
+
+                        <a href="index.html" class="logo-link">
+
+                            <div class="logo-wrap">
+
+                                <img class="logo-img" src="../assets/img/logo-2.png" alt="">
+
+                                <img class="logo-img logo-icon" src="../assets/img/logo.png" alt="">
+
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="nk-sidebar-element nk-sidebar-body">
+                    <div class="nk-sidebar-content h-100" data-simplebar>
+                        <div class="nk-sidebar-menu">
+                            <ul class="nk-menu">
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="index.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-dashboard-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Dashboard</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="staff.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-group-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Staffs</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="admin.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-admin-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Administer</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="products.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-shopping-bag-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Products</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item mb-3">
+                                    <a href="settings.html" class="nk-menu-link">
+                                        <span class="nk-menu-icon">
+                                            <em class="icon ri-settings-2-fill"></em>
+                                        </span>
+                                        <span class="nk-menu-text">Settings</span>
+                                    </a>
+                                </li>
+
+                                <li class="nk-menu-item has-sub"><a href="#" class="nk-menu-link nk-menu-toggle"><span
+                                            class="nk-menu-icon"><em class="icon ri-login-box-line"></em></span><span
+                                            class="nk-menu-text">Auth Pages</span></a>
+                                    <ul class="nk-menu-sub">
+                                        <li class="nk-menu-item"><a href="login.html" 
+                                                class="nk-menu-link"><span class="nk-menu-text">Login</span></a></li>
+                                        <li class="nk-menu-item"><a href="register.html" 
+                                                class="nk-menu-link"><span class="nk-menu-text">Register</span></a></li>
+                                        <li class="nk-menu-item"><a href="forgot-password.html" 
+                                                class="nk-menu-link"><span class="nk-menu-text">Forgot
+                                                    Password</span></a></li>
+
+                                        <li class="nk-menu-item"><a href="verify.html" 
+                                                class="nk-menu-link"><span class="nk-menu-text">Verify Email</span></a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="nk-wrap">
+
+                <div class="nk-header nk-header-fixed">
+                    <div class="container-fluid">
+                        <div class="nk-header-wrap">
+
+                            <div class="nk-header-logo ms-n1">
+
+                                <div class="nk-sidebar-toggle me-5">
+                                    <button class="btn btn-sm btn-zoom btn-icon sidebar-toggle d-sm-none">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                    <button class="btn btn-md btn-zoom btn-icon sidebar-toggle d-none d-sm-inline-flex">
+                                        <em class="icon ri-menu-line"></em>
+                                    </button>
+                                </div>
+
+                            </div>
+
+                            <div class="nk-header-tools">
+
+                                <ul class="nk-quick-nav ms-2">
+
+                                    <li class="dropdown d-inline-flex">
+
+                                        <a data-bs-toggle="dropdown" class="d-inline-flex" href="#">
+                                            <div class="media media-md media-circle media-middle text-bg-primary">
+                                                <img src="../assets/img/avatar.png" />
+                                            </div>
+                                        </a>
+
+                                        <div class="dropdown-menu dropdown-menu-md rounded-3">
+                                            <div class="dropdown-content py-3">
+                                                <div class="border border-light rounded-3">
+
+                                                    <div
+                                                        class="px-3 py-2 bg-white border-bottom border-light rounded-top-3">
+
+                                                        <div
+                                                            class="d-flex flex-wrap align-items-center justify-content-between">
+                                                            <h6 class="lead-text">Free Plan</h6>
+                                                            <a class="link link-primary" href="#">
+                                                                <em class="ri-flashlight-fill icon text-warning"></em>
+                                                                <span>Upgrade</span>
+                                                            </a>
+                                                        </div>
+
+                                                        <div class="progress progress-md">
+                                                            <div class="progress-bar" data-progress="25%"></div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <a class="d-flex px-3 py-2 bg-primary bg-opacity-10 rounded-bottom-3"
+                                                        href="profile.html">
+                                                        <div class="media-group">
+
+                                                            <div
+                                                                class="media media-sm media-middle media-circle text-bg-primary">
+                                                                <img src="assets/img/avatar.png" />
+                                                            </div>
+
+                                                            <div class="media-text">
+                                                                <h6 class="fs-6 mb-0">Shawn Mahbub</h6>
+                                                                <span class="text-light fs-7">shawn@websbd.com</span>
+                                                            </div>
+
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </li>
+
+                                </ul>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="nk-content">
+                    <div class="container-xl">
+                        <div class="nk-content-inner">
+
+                            <div class="nk-content-body">
+
+                                <div class="nk-block-head nk-page-head">
+                                    <div class="nk-block-head-between">
+                                        <div class="nk-block-head-content">
+                                            <h2 class="display-6">Welcome CharlesTech!</h2>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-content py-3">
+                                    <div class="form-control-wrap">
+                                        <div class="form-control-icon start md text-light"><em
+                                                class="icon ri-search-line pt-3"></em></div><input type="text"
+                                            class="form-control py-3 form-control-md" placeholder="Search Admin">
+                                    </div>
+                                </div>
+
+                                <div class="nk-block">
+
+                                    <div class="nk-block-head mt-5 pt-3">
+                                        <div class="nk-block-head-between">
+                                            <div class="nk-block-head-content">
+                                                <h1 class="">Company Admins</h1>
+                                            </div>
+                                            <a class="btn btn-primary btn-sm" data-bs-toggle="offcanvas"
+                                                href="#offcanvasExample" role="button"
+                                                aria-controls="offcanvasExample">+ Add Admin</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="card">
+                                        <table class="table table-middle mb-0">
+
+                                            <thead class="table-light">
+                                                <tr>
+                                                    <th class="tb-col tb-col-check">
+                                                        <div class="form-check"><input class="form-check-input"
+                                                                type="checkbox" value=""></div>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">FIRST NAME</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">LAST NAME</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">ROLE</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">EMAIL</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">PHONE NUMBER</h6>
+                                                    </th>
+                                                    <th class="tb-col">
+                                                        <h6 class="overline-title">JOINED</h6>
+                                                    </th>
+                                                    <th class="tb-col"></th>
+                                                </tr>
+                                            </thead>
+
+                                            <tbody>
+
+                                                <tr>
+                                                    <td class="tb-col tb-col-check">
+                                                        <div class="form-check"><input class="form-check-input"
+                                                                type="checkbox" value=""></div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Admin</div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Charle</div>
+                                                    </td>
+
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Supper Admin</div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">donutah@gmail.com</div>
+                                                    </td>
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">234 8080 484 98595</div>
+                                                    </td>
+
+
+                                                    <td class="tb-col">
+                                                        <div class="caption-text">Tue, Aug 22, 2023 6:19 PM</div>
+                                                    </td>
+
+
+                                                    <td class="tb-col tb-col-end">
+                                                        <div class="dropdown"><button
+                                                                class="btn btn-sm btn-icon btn-zoom me-n1" type="button"
+                                                                data-bs-toggle="dropdown" aria-expanded="false"><em
+                                                                    class="icon ri-settings-2-line"></em></button>
+                                                            <div class="dropdown-menu dropdown-menu-end" style="">
+                                                                <div class="dropdown-content">
+                                                                    <ul
+                                                                        class="link-list link-list-hover-bg-primary link-list-md">
+                                                                        <li><a href="staff-details.html"><em
+                                                                                    class="icon ri-eye-fill"></em><span>View</span></a>
+                                                                        </li>
+
+                                                                        <li><a href="#"><em
+                                                                                    class="icon ri-delete-bin-2-fill"></em><span>Move
+                                                                                    to Trash</span></a></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ADD NEW STAFF -->
+    <div class="offcanvas offcanvas-end customeoff " tabindex="-1" id="offcanvasExample" aria-modal="true"
+        role="dialog">
+        <div class="offcanvas-header">
+            <h5 class="modal-title" id="#gridSystemModal">Add Admin</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="container-fluid">
+                <div>
+                    <label>Profile Picture</label>
+                    <div class="dz-default dlab-message upload-img mb-3">
+                        <form action="#" class="dropzone">
+                            <svg width="41" height="40" viewBox="0 0 41 40" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M27.1666 26.6667L20.4999 20L13.8333 26.6667" stroke="#DADADA" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M20.5 20V35" stroke="#DADADA" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                                <path
+                                    d="M34.4833 30.6501C36.1088 29.7638 37.393 28.3615 38.1331 26.6644C38.8731 24.9673 39.027 23.0721 38.5703 21.2779C38.1136 19.4836 37.0724 17.8926 35.6111 16.7558C34.1497 15.619 32.3514 15.0013 30.4999 15.0001H28.3999C27.8955 13.0488 26.9552 11.2373 25.6498 9.70171C24.3445 8.16614 22.708 6.94647 20.8634 6.1344C19.0189 5.32233 17.0142 4.93899 15.0001 5.01319C12.9861 5.0874 11.015 5.61722 9.23523 6.56283C7.45541 7.50844 5.91312 8.84523 4.7243 10.4727C3.53549 12.1002 2.73108 13.9759 2.37157 15.959C2.01205 17.9421 2.10678 19.9809 2.64862 21.9222C3.19047 23.8634 4.16534 25.6565 5.49994 27.1667"
+                                    stroke="#DADADA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                </path>
+                                <path d="M27.1666 26.6667L20.4999 20L13.8333 26.6667" stroke="#DADADA" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            <div class="fallback">
+                                <input name="file" type="file" multiple="">
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput1" class="form-label">Admin ID <span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput2" class="form-label">Admin Name<span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput2" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput3" class="form-label">Admin Email<span
+                                    class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput4" class="form-label">Password<span
+                                    class="text-danger">*</span></label>
+                            <input type="password" class="form-control" id="exampleFormControlInput4" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">Designation<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">Software Engineer</option>
+                                    <option value="css">Civil Engineer</option>
+                                    <option value="javascript">Web Doveloper</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-1"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-1" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">Department<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">Software</option>
+                                    <option value="css">Doit</option>
+                                    <option value="javascript">Designing</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-2"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-2" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">Country<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">Ind</option>
+                                    <option value="css">USA</option>
+                                    <option value="javascript">UK</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-3"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-3" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput88" class="form-label">Mobile<span
+                                    class="text-danger">*</span></label>
+                            <input type="number" class="form-control" id="exampleFormControlInput88" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">Gender<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">Male</option>
+                                    <option value="css">Female</option>
+                                    <option value="javascript">Other</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-4"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-4" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput99" class="form-label">Joining Date<span
+                                    class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="exampleFormControlInput99">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput8" class="form-label">Date of Birth<span
+                                    class="text-danger">*</span></label>
+                            <input type="date" class="form-control" id="exampleFormControlInput8">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label for="exampleFormControlInput10" class="form-label">Reporting To<span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput10" placeholder="">
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">Language Select<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">English</option>
+                                    <option value="css">Hindi</option>
+                                    <option value="javascript">Canada</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-5"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-5" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 mb-3">
+                            <label class="form-label">User Role<span class="text-danger">*</span></label>
+                            <div class="dropdown bootstrap-select default-select style-1 form-control"><select
+                                    class="default-select style-1 form-control">
+                                    <option data-display="Select">Please select</option>
+                                    <option value="html">Parmanent</option>
+                                    <option value="css">Parttime</option>
+                                    <option value="javascript">Per Hours</option>
+                                </select><button type="button" tabindex="-1" class="btn dropdown-toggle btn-light"
+                                    data-bs-toggle="dropdown" role="combobox" aria-owns="bs-select-6"
+                                    aria-haspopup="listbox" aria-expanded="false" title="Please select">
+                                    <div class="filter-option">
+                                        <div class="filter-option-inner">
+                                            <div class="filter-option-inner-inner">Please select</div>
+                                        </div>
+                                    </div>
+                                </button>
+                                <div class="dropdown-menu ">
+                                    <div class="inner show" role="listbox" id="bs-select-6" tabindex="-1">
+                                        <ul class="dropdown-menu inner show" role="presentation"></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-12 mb-3">
+                            <label class="form-label">Address<span class="text-danger">*</span></label>
+                            <textarea rows="3" class="form-control"></textarea>
+                        </div>
+                        <div class="col-xl-12 mb-3">
+                            <label class="form-label">About<span class="text-danger">*</span></label>
+                            <textarea rows="3" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="btn btn-danger light ms-1">Cancel</button>
+                        <button class="btn btn-primary me-1">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../assets/js/bundle2888.js"></script>
+    <script src="../assets/js/scripts2888.js"></script>
+
+</body>
+
+</html>
